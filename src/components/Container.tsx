@@ -1,0 +1,25 @@
+import type { ComponentPropsWithoutRef, ElementType, ReactNode } from 'react';
+import { cn } from '../lib/cn';
+
+type ContainerProps<T extends ElementType> = {
+  as?: T;
+  children: ReactNode;
+  className?: string;
+} & ComponentPropsWithoutRef<T>;
+
+const Container = <T extends ElementType = 'div'>({
+  as,
+  children,
+  className,
+  ...props
+}: ContainerProps<T>) => {
+  const Component = as ?? 'div';
+
+  return (
+    <Component className={cn('mx-auto w-full max-w-7xl ui-container', className)} {...props}>
+      {children}
+    </Component>
+  );
+};
+
+export default Container;
