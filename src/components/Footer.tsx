@@ -54,6 +54,26 @@ const socialIcons: Record<string, JSX.Element> = {
       />
     </svg>
   ),
+  YouTube: (
+    <svg
+      aria-hidden
+      className="h-5 w-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20 12.1c0-1.3-.1-2.5-.3-3.6a3.1 3.1 0 0 0-2.2-2.3C15.9 5.7 14 5.6 12 5.6c-2 0-3.9.1-5.5.6a3.1 3.1 0 0 0-2.2 2.3c-.2 1.1-.3 2.3-.3 3.6 0 1.3.1 2.5.3 3.6a3.1 3.1 0 0 0 2.2 2.3c1.6.5 3.5.6 5.5.6 2 0 3.9-.1 5.5-.6a3.1 3.1 0 0 0 2.2-2.3c.2-1.1.3-2.3.3-3.6Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10.4 9.6 15.2 12l-4.8 2.4V9.6Z"
+        fill="currentColor"
+      />
+    </svg>
+  ),
 };
 
 const Footer = ({ content }: FooterProps) => {

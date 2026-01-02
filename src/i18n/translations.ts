@@ -473,7 +473,12 @@ export const translations: Record<Locale, SiteContent> = {
 	      whatsappHref: 'https://wa.me/41215551234',
 	      emailLabel: 'Scrivici una mail',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      hours: ['Martedì - Venerdì · 09:00 - 20:00', 'Sabato · 09:00 - 18:00'],
+      hours: [
+        'Lunedì · Chiuso',
+        'Martedì – Giovedì · 09:00 – 18:30',
+        'Venerdì · 09:00 – 20:00',
+        'Sabato · 09:00 – 18:00',
+      ],
       address: 'Aarauerstrasse 97, Olten',
       ambienceImage: {
         src: 'https://images.unsplash.com/photo-1492447166138-50c3889fccb1',
@@ -487,10 +492,11 @@ export const translations: Record<Locale, SiteContent> = {
 	      phoneHref: 'tel:+41765933666',
 	      emailLabel: 'paulohila@icloud.com',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      socials: [
-        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
-        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
-      ],
+	      socials: [
+	        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
+	        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
+	        { label: 'YouTube', href: 'https://youtube.com/@arenabarbershopolten?si=439lzb3NQZx7fy3J' },
+	      ],
 	      bottom: {
 	        rights: 'Arena Barbershop. Tutti i diritti riservati.',
 	        crafted: 'Curato quotidianamente da PIONIO',
@@ -780,7 +786,12 @@ export const translations: Record<Locale, SiteContent> = {
 	      whatsappHref: 'https://wa.me/41215551234',
 	      emailLabel: 'Write us an email',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      hours: ['Tuesday – Friday · 09:00 – 20:00', 'Saturday · 09:00 – 18:00'],
+      hours: [
+        'Monday · Closed',
+        'Tuesday – Thursday · 09:00 – 18:30',
+        'Friday · 09:00 – 20:00',
+        'Saturday · 09:00 – 18:00',
+      ],
       address: 'Aarauerstrasse 97, Olten',
       ambienceImage: {
         src: 'https://images.unsplash.com/photo-1492447166138-50c3889fccb1',
@@ -794,10 +805,11 @@ export const translations: Record<Locale, SiteContent> = {
 	      phoneHref: 'tel:+41765933666',
 	      emailLabel: 'paulohila@icloud.com',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      socials: [
-        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
-        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
-      ],
+	      socials: [
+	        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
+	        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
+	        { label: 'YouTube', href: 'https://youtube.com/@arenabarbershopolten?si=439lzb3NQZx7fy3J' },
+	      ],
 	      bottom: {
 	        rights: 'Arena Barbershop. All rights reserved.',
 	        crafted: 'Curated daily by PIONIO.',
@@ -1087,7 +1099,12 @@ export const translations: Record<Locale, SiteContent> = {
 	      whatsappHref: 'https://wa.me/41215551234',
 	      emailLabel: 'Schreibe uns eine E-Mail',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      hours: ['Dienstag – Freitag · 09:00 – 20:00', 'Samstag · 09:00 – 18:00'],
+      hours: [
+        'Montag · Geschlossen',
+        'Dienstag – Donnerstag · 09:00 – 18:30 Uhr',
+        'Freitag · 09:00 – 20:00 Uhr',
+        'Samstag · 09:00 – 18:00 Uhr',
+      ],
       address: 'Aarauerstrasse 97, Olten',
       ambienceImage: {
         src: 'https://images.unsplash.com/photo-1549289524-06cf8837aceb',
@@ -1101,10 +1118,11 @@ export const translations: Record<Locale, SiteContent> = {
 	      phoneHref: 'tel:+41765933666',
 	      emailLabel: 'paulohila@icloud.com',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      socials: [
-        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
-        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
-      ],
+	      socials: [
+	        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
+	        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
+	        { label: 'YouTube', href: 'https://youtube.com/@arenabarbershopolten?si=439lzb3NQZx7fy3J' },
+	      ],
       bottom: {
         rights: 'Arena Barbershop. Alle Rechte vorbehalten.',
         crafted: 'Täglich vom Arena Team in Olten kuratiert.',
@@ -1394,7 +1412,12 @@ export const translations: Record<Locale, SiteContent> = {
 	      whatsappHref: 'https://wa.me/41215551234',
 	      emailLabel: 'Nous écrire un e-mail',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      hours: ['Mardi – Vendredi · 09:00 – 20:00', 'Samedi · 09:00 – 18:00'],
+      hours: [
+        'Lundi · Fermé',
+        'Mardi – Jeudi · 09:00 – 18:30',
+        'Vendredi · 09:00 – 20:00',
+        'Samedi · 09:00 – 18:00',
+      ],
       address: 'Aarauerstrasse 97, Olten',
       ambienceImage: {
         src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
@@ -1408,10 +1431,11 @@ export const translations: Record<Locale, SiteContent> = {
 	      phoneHref: 'tel:+41765933666',
 	      emailLabel: 'paulohila@icloud.com',
 	      emailHref: 'mailto:paulohila@icloud.com',
-      socials: [
-        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
-        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
-      ],
+	      socials: [
+	        { label: 'Instagram', href: 'https://www.instagram.com/arenabarbershop.ch/' },
+	        { label: 'TikTok', href: 'https://www.tiktok.com/@arenabarbershopolten?lang=en' },
+	        { label: 'YouTube', href: 'https://youtube.com/@arenabarbershopolten?si=439lzb3NQZx7fy3J' },
+	      ],
       bottom: {
         rights: 'Arena Barbershop. Tous droits réservés.',
         crafted: 'Réalisé au quotidien par l’équipe Arena à Olten.',
