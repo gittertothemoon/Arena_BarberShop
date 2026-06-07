@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# Arena Barbershop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sito vetrina per **Arena Barbershop** (Olten, Svizzera): landing single-page
+multilingue che presenta servizi, esperienza, galleria, merchandising e contatti,
+con CTA di prenotazione via WhatsApp ed email.
 
-Currently, two official plugins are available:
+🔗 **Live:** https://arena-barbershop.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Caratteristiche
 
-## React Compiler
+- **Single-page** a sezioni: hero, servizi (con durata e prezzo), filosofia,
+  galleria, merch, testimonianze, contatti/orari, footer.
+- **4 lingue** (IT / EN / DE / FR) con default italiano — tutti i contenuti sono
+  dati tipizzati in `src/i18n/translations.ts`, switch lingua in-app.
+- **Navigazione mobile** con menu slide-in (scroll-lock, chiusura con ESC /
+  click-outside) e pulsante "torna su".
+- **Zero dipendenze runtime extra**: solo React/ReactDOM. Animazioni in puro
+  Tailwind/CSS, icone come SVG inline.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the ESLint configuration
+| Ambito | Tecnologia |
+| --- | --- |
+| UI | React 18 + TypeScript (strict) |
+| Build | Vite 5 |
+| Styling | Tailwind CSS 3 + design token custom |
+| Hosting | Vercel |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Sviluppo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev        # http://localhost:5173
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Script
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Comando | Descrizione |
+| --- | --- |
+| `npm run dev` | Dev server Vite |
+| `npm run build` | Type-check + build di produzione |
+| `npm run lint` | ESLint |
+| `npm run preview` | Anteprima della build |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Struttura
+
 ```
+src/
+├── components/         # sezioni (Hero, Services, Gallery, Booking, ...)
+├── i18n/translations.ts  # tutti i contenuti, 4 lingue, tipizzati
+└── lib/cn.ts           # helper per classi
+```
+
+## Note
+
+La sezione "Booking" è una scheda contatti (WhatsApp + email + orari), non un
+sistema di prenotazione online.
