@@ -1,5 +1,5 @@
 import Container from './Container';
-import heroImage from '../assets/hero-banner.png';
+import heroImage from '../assets/hero-banner.webp';
 import type { HeroContent } from '../i18n/translations';
 
 type HeroSectionProps = {

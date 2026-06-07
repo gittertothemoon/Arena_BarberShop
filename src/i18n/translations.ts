@@ -1,15 +1,15 @@
-import merchApparelImageUrl from '../assets/1.png';
-import merchAccessoriesImageUrl from '../assets/7.png';
-import merchCoffeeImageUrl from '../assets/17.png';
-import merchBeardHairImageUrl from '../assets/18.png';
-import service1ImageUrl from '../assets/1_service.png';
-import service2ImageUrl from '../assets/2_service.png';
-import service3ImageUrl from '../assets/3_service.png';
-import service4ImageUrl from '../assets/4_service.png';
-import philosophy1ImageUrl from '../assets/1_PHILOSOPHY.png';
-import philosophy2ImageUrl from '../assets/2_PHILOSOPHY.png';
-import philosophy3ImageUrl from '../assets/3_PHILOSOPHY.png';
-import philosophy4ImageUrl from '../assets/4_PHILOSOPHY.png';
+import merchApparelImageUrl from '../assets/1.webp';
+import merchAccessoriesImageUrl from '../assets/7.webp';
+import merchCoffeeImageUrl from '../assets/17.webp';
+import merchBeardHairImageUrl from '../assets/18.webp';
+import service1ImageUrl from '../assets/1_service.webp';
+import service2ImageUrl from '../assets/2_service.webp';
+import service3ImageUrl from '../assets/3_service.webp';
+import service4ImageUrl from '../assets/4_service.webp';
+import philosophy1ImageUrl from '../assets/1_PHILOSOPHY.webp';
+import philosophy2ImageUrl from '../assets/2_PHILOSOPHY.webp';
+import philosophy3ImageUrl from '../assets/3_PHILOSOPHY.webp';
+import philosophy4ImageUrl from '../assets/4_PHILOSOPHY.webp';
 
 export const LOCALES = ['it', 'en', 'de', 'fr'] as const;
 
