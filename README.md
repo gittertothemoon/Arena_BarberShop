@@ -1,57 +1,59 @@
 # Arena Barbershop
 
-Sito vetrina per **Arena Barbershop** (Olten, Svizzera): landing single-page
-multilingue che presenta servizi, esperienza, galleria, merchandising e contatti,
-con CTA di prenotazione via WhatsApp ed email.
+![Arena Barbershop](src/assets/hero-banner.webp)
+
+Showcase website for **Arena Barbershop** (Olten, Switzerland): a multilingual
+single-page landing presenting services, experience, gallery, merchandising and
+contact, with booking CTAs via WhatsApp and email.
 
 🔗 **Live:** https://arena-barbershop.vercel.app
 
-## Caratteristiche
+## Features
 
-- **Single-page** a sezioni: hero, servizi (con durata e prezzo), filosofia,
-  galleria, merch, testimonianze, contatti/orari, footer.
-- **4 lingue** (IT / EN / DE / FR) con default italiano — tutti i contenuti sono
-  dati tipizzati in `src/i18n/translations.ts`, switch lingua in-app.
-- **Navigazione mobile** con menu slide-in (scroll-lock, chiusura con ESC /
-  click-outside) e pulsante "torna su".
-- **Zero dipendenze runtime extra**: solo React/ReactDOM. Animazioni in puro
-  Tailwind/CSS, icone come SVG inline.
+- **Single-page** sections: hero, services (with duration and price), philosophy,
+  gallery, merch, testimonials, contact/hours, footer.
+- **4 languages** (IT / EN / DE / FR), Italian default — all content is typed
+  data in `src/i18n/translations.ts`, with an in-app language switch.
+- **Mobile navigation** with a slide-in menu (scroll lock, close on ESC /
+  click-outside) and a back-to-top button.
+- **No extra runtime dependencies**: React/ReactDOM only. Animations are pure
+  Tailwind/CSS, icons are inline SVGs.
 
 ## Stack
 
-| Ambito | Tecnologia |
+| Area | Technology |
 | --- | --- |
 | UI | React 18 + TypeScript (strict) |
 | Build | Vite 5 |
-| Styling | Tailwind CSS 3 + design token custom |
+| Styling | Tailwind CSS 3 + custom design tokens |
 | Hosting | Vercel |
 
-## Sviluppo
+## Development
 
 ```bash
 npm install
 npm run dev        # http://localhost:5173
 ```
 
-### Script
+### Scripts
 
-| Comando | Descrizione |
+| Command | Description |
 | --- | --- |
-| `npm run dev` | Dev server Vite |
-| `npm run build` | Type-check + build di produzione |
+| `npm run dev` | Vite dev server |
+| `npm run build` | Type-check + production build |
 | `npm run lint` | ESLint |
-| `npm run preview` | Anteprima della build |
+| `npm run preview` | Preview the production build |
 
-## Struttura
+## Structure
 
 ```
 src/
-├── components/         # sezioni (Hero, Services, Gallery, Booking, ...)
-├── i18n/translations.ts  # tutti i contenuti, 4 lingue, tipizzati
-└── lib/cn.ts           # helper per classi
+├── components/           # sections (Hero, Services, Gallery, Booking, ...)
+├── i18n/translations.ts  # all content, 4 languages, typed
+└── lib/cn.ts             # classname helper
 ```
 
-## Note
+## Notes
 
-La sezione "Booking" è una scheda contatti (WhatsApp + email + orari), non un
-sistema di prenotazione online.
+The "Booking" section is a contact card (WhatsApp + email + hours), not an online
+booking system.
